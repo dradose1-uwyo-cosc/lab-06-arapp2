@@ -61,8 +61,7 @@ lrslowamkcwolbcgfkfciegdwqskuazxnycqkkggzsowcmafay
 ibmkdwkqmdkjesqnjiqpijixbwjhenmsrrlpcseliiajlvcaac
 zkdenxczyooloczcaahnkehbwimvieedpdlqfafbqvxvfmvabd
 """
-random_string = random_string.replace("\n","") #remove all newline characters
-print(len(random_string)) # Print out the size for reference 
+
 
 # Above is a string with 2500 characters.
 # Create a program that goes through and counts the occurrence of each character, excluding \n using a  dictionary
@@ -70,11 +69,14 @@ print(len(random_string)) # Print out the size for reference
 # Output which letter occurred the most 
 # Output which letter occurred the least 
 # Output what the percentage of the string each character is, again in alphabetical
+random_string = random_string.replace("\n","") #remove all newline characters
+print(len(random_string)) # Print out the size for reference 
 letters={}
 letters_list=[]
 most_occuring=0
 least_occuring=2500
 least_occurred=0
+most_occurred=0
 for letter in random_string:
     if letter != set(letters_list):
         letters_list.append(letter)
